@@ -4,8 +4,8 @@ const act_4 = {
         dialogue: "Te encuentras en el hall de la casa. Sientes que tu sanidad se está desmoronando.",
         choices: [
             { text: "Vas al ático.", target: "panel_atico" },
-            { text: "Corres hacia las escaleras.", target: "panel_escaleras" },
             { text: "Te acercas a quien parece tu amiga.", target: "panel_demonio" },
+            { text: "Corres hacia las escaleras.", target: "panel_escaleras" },
         ]
     },
 
@@ -29,6 +29,14 @@ const act_4 = {
 
     panel_atico_abandono: {
         background: "assets/27.jpg",
+        dialogue: "...",
+        choices: [
+            { text: "¿Laila?", target: "panel_atico_abandono_p1" },
+        ]
+    },
+
+    panel_atico_abandono_p1: {
+        background: "assets/30.jpg",
         dialogue: "Laila te abandona en el ático.",
         choices: [
             { text: "Siento un frío en la espalda...", target: "panel_atico_abandono_p2" },
@@ -44,8 +52,16 @@ const act_4 = {
     },
 
     panel_atico_escape: {
+        background: "assets/38.jpg",
+        dialogue: "Laila se pone contenta. “Sabía que podía confiar en vos...”",
+        choices: [
+            { text: "Escapan por la ventana.", target: "panel_atico_escape_p1" },
+        ]
+    },
+
+    panel_atico_escape_p1: {
         background: "assets/30.jpg",
-        dialogue: "Escapan por la ventana. Sientes una brisa tenue.",
+        dialogue: "Sientes una brisa tenue.",
         choices: [
             { text: "Libertad...", target: "panel_atico_esscape_p2"},
         ]
